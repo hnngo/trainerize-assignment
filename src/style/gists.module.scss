@@ -1,0 +1,59 @@
+.tableContainer {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.rowContainer {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(200, 199, 204);
+    padding: 8px;
+    animation: fadeIn ease-in-out 1s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.rowAvatarImg {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.rowFilename {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.rowPages {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(200, 199, 204);
+    padding: 8px;
+}
+
+.toggleContainer {
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    cursor: pointer;
+}
+
+.toggleButton {
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.toggleGreen {
+    background-color: green;
+}
